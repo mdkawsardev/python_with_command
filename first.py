@@ -78,3 +78,9 @@ car1 = Car("red", 122)
 car1.show()
 print(car1.brand)
 print(car1.model)
+# class Bus(Car):
+#     cat = "Bus"
+#     @staticmethod
+#     def pub():
+#         print(f"Hello")
+# bus1 = Bus()
