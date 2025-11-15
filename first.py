@@ -66,21 +66,20 @@ else:
     print(False)
 
 class Car:
-    brand = "Mercedez"
-    model = 2025
     def __init__(self, color, custom):
         self.color = color
         self.custom = custom
     def show(self):
         print(f"The color is: {self.color}, and the custom is: {self.custom}")
 
-car1 = Car("red", 122)
+car1 = Car("Green", 222)
 car1.show()
-print(car1.brand)
-print(car1.model)
-# class Bus(Car):
-#     cat = "Bus"
-#     @staticmethod
-#     def pub():
-#         print(f"Hello")
-# bus1 = Bus()
+class Bus(Car):
+    def __init__(self, color, custom, age):
+        super().__init__(color, custom)
+        self.age = age
+    def pub(self):
+        print(f"The child's color is: {self.color} and custom is: {self.custom} and age is: {self.age}")
+bus1 = Bus("blue", 343, 23)
+bus1.pub()
+bus1.show()
