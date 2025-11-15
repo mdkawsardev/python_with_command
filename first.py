@@ -66,26 +66,15 @@ else:
     print(False)
 
 class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
+    brand = "Mercedez"
+    model = 2025
+    def __init__(self, color, custom):
+        self.color = color
+        self.custom = custom
     def show(self):
-        print(f"The brand is: {self.brand} and model number is: {self.model}")
+        print(f"The color is: {self.color}, and the custom is: {self.custom}")
 
-
-benz = Car("Marcedez", f"{2025} new audition")
-benz.show()
-bmw = Car("BMW", f"{2024} old audition")
-bmw.show()
-toyota = Car("TOYOTA", f"{2025} brand new audition")
-toyota.show()
-
-class RacingCar(Car):
-    def __init__(self, speed, milage):
-        self.speed = speed
-        self.milage = milage
-    def pub(self):
-        print(f"Speed is: {self.speed} and Milage is: {self.milage}")
-
-sup = RacingCar(f"{800}KPH", f"{8}KLM per litre")
-sup.pub()
+car1 = Car("red", 122)
+car1.show()
+print(car1.brand)
+print(car1.model)
