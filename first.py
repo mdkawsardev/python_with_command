@@ -65,3 +65,15 @@ if dd.isalnum():
 else:
     print(False)
 
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+    def show(self):
+        print(f"The brand is: {self.brand} and model number is: {self.model}")
+
+
+benz = Car("Marcedez", f"{2025} new audition")
+benz.show()
+bmw = Car("BMW", f"{2024} old audition")
+bmw.show()
