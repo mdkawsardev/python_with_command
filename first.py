@@ -79,3 +79,13 @@ bmw = Car("BMW", f"{2024} old audition")
 bmw.show()
 toyota = Car("TOYOTA", f"{2025} brand new audition")
 toyota.show()
+
+class RacingCar(Car):
+    def __init__(self, speed, milage):
+        self.speed = speed
+        self.milage = milage
+    def pub(self):
+        print(f"Speed is: {self.speed} and Milage is: {self.milage}")
+
+sup = RacingCar(f"{800}KPH", f"{8}KLM per litre")
+sup.pub()
