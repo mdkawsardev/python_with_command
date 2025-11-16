@@ -82,4 +82,3 @@ class Bus(Car):
         print(f"The child's color is: {self.color} and custom is: {self.custom} and age is: {self.age}")
 bus1 = Bus("blue", 343, 23)
 bus1.pub()
-bus1.show()
